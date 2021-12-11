@@ -1,1 +1,12 @@
-
+#include "string.h"
+#include "lib.h"
+using namespace std;
+bool posizione(char A[10][20], char B[10],int &b){
+    for(int i=0;i<10;i++){
+        if(strcmp(A[i],B)==0){
+            b=i;
+            return true;
+        }
+    }
+    return false;
+}
